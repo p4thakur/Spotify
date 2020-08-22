@@ -1,0 +1,69 @@
+.footer {
+  position: fixed; /*I want tit to be fixed at bottom of screen*/
+  bottom: 0; /*stick at bottom*/
+  height: 65px;
+  width: 97%;
+  background-color: #282828;
+  /*to keep conent inside it streched from inside**/ /*This increase it size by default*/
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /*evenly space between these things*/
+}
+
+.footer_left {
+  flex: 0.3; /**we can do this because we set our parent conatiner propert=flex*/
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 330px; /*setting up maximum width*/
+}
+
+.footer_left_logo {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.footer_center {
+  flex: 0.4;
+  padding: 0 100px; /*0 pixel on top/bottom and 100 px on left right**/
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  max-width: 300px; /*what this do is, when I deacres or incream my window size, by center button will never go beyound 300px**/
+}
+
+.footer_right {
+  flex: 0.3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 100px;
+  max-width: 300px;
+}
+
+.footer_green {
+  color: #1ed153;
+}
+
+.footer_songInfo > h4 {
+  margin-bottom: 12px;
+}
+
+.footer_songInfo > p {
+  font-size: 12px;
+}
+.footer_icon :hover,
+.footer_green:hover {
+  transition: transfrom 0.2s ease-in-out;
+  transform: scale(
+    1.2
+  ) !important; /**important to override the Material Ui properties*/
+}
+
+/**goto amy matrial UI slider and change its color to green*/
+.footer_right * .MuiSlider-root {
+  color: green;
+}

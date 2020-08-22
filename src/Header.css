@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between; /*this will put my icon far aparts**/
+  margin-bottom: 30px;
+}
+
+.header_left {
+  flex: 0.5; /*assign the spac as per your conveninet*/
+  background-color: white;
+  color: grey;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  min-width: 70px;
+  padding: 10px; /*this pprperty is very strong. It solve small issue like input field going beyond than it will expand my contain from inner side**/
+}
+
+.header_left > input {
+  border: none; /*Remove border from input text**/
+  width: 100%; /*it help me dipay my whole text of placeholder*/
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+}
+
+.header_right > h4 {
+  margin-left: 10px;
+}

@@ -1,0 +1,65 @@
+.body {
+  /**it means take 80 perc of  avaialble space*/
+  /*also it will by itself cover the hight based on sidebar*/
+
+  flex: 0.8;
+  /*to get transition effect on that color**/
+  /*it says initial color is violet. now get to the black from 0 opacity to 100 opacity. this create transition effect*/
+  background: linear-gradient(rgb(22, 41, 44), rgba(0, 0, 0, 1));
+  padding: 30px; /*to keep conent inside it away from corner.*/
+  color: white;
+  height: 100vh; /**If I dont add this my overlay doent work*/
+  overflow-y: overlay; /**this propertut decide waht to do when conennt
+  cant fit in page shouls i scroll down, or hide the contant and all*/
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body_info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+.body__songs {
+  z-index: 1;
+  margin: 20px -30px;
+}
+
+.basic_infotext > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.basic_infotext > p {
+  font-size: 14px;
+}
+
+.body_info > img {
+  height: 20vw; /*20 view width. it adjust iteself based on my broser size to make it more cleaner*/
+  margin: 0 10px; /**top bottom 0 and left/right 20px*/
+  /**This creates shodoes around my image**/
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+.body_icons {
+  display: flex;
+  align-items: center; /*to keep each elmennt in this container algned*/
+}
+
+.body_icons > .MuiSvgIcon-root {
+  margin-right: 20px; /*this create space between my margine*/
+}
+
+.body_playcircle {
+  font-size: 80px !important;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.body_playcircle:hover {
+  transition: 100ms transfrom ease-in;
+  transform: scale(1.08);
+}

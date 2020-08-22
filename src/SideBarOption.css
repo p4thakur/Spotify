@@ -1,0 +1,16 @@
+.sidebaroption {
+  display: flex; /*to keep icon and title in one row*/
+  align-items: center; /*flex dont necessary bring component to center. So to bring compnent to center that in in same continer use this property*/
+  color: grey;
+  height: 40px;
+  cursor: pointer; /**if i hover it gives me cursor*/
+  transition: 200ms color ease-in; /*it provide trnsition when I change
+  some property. for example if I hover it I want to change its color to white. so it will give animae afffetc. 200ms=0.2sec*/
+}
+
+/*when i hover it I want to change color with transiton*/
+
+.sidebaroption:hover {
+  /*if there is gap between : hover than it wont run. How stupid is that*/
+  color: white;
+}
